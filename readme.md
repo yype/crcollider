@@ -1,8 +1,8 @@
 ## CRCollider
 
-*CRCollider* allows you to arbitrarily fake a file's CRC value.
+*CRCollider* allows you to arbitrarily craft a file's CRC value.
 
-For example, the following bitmap image has both its CRC32 and CRC64 value(calculated by 7-Zip) equal to zero, you can fake files like this on your own.
+For example, the following bitmap image has both its CRC32 and CRC64 value(calculated by 7-Zip) equal to zero, you can craft files like this using *CRCollider* on your own.
 
 ![img](./example/example_faked_0.bmp)
 
@@ -35,4 +35,4 @@ def collcrc(crc_func, sz: int, msg: bytes, ctr_bits: List[int], target_crc: int)
     """
 ```
 
-The usage is quite simple straightforward, you can check `example.py` for details.
+The usage is quite simple and straightforward, you can check `example.py` for details.
