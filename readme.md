@@ -16,11 +16,11 @@ For example, the following bitmap image has both its CRC32 and CRC64 value(calcu
 
 Downsides
 
-- Currently it works slowly for big files, I will try to find some time for the optimization
+- Currently it works slowly on big files, I will try to find some time for the optimization
 
 ## Usage
 
-The function ***collcrc*** inside `crcollider.py` gets all the job done:
+The function ***collcrc*** inside `crcollider.py` gets all the jobs done:
 
 ```python
 def collcrc(crc_func, sz: int, msg: bytes, ctr_bits: List[int], target_crc: int) -> Tuple[int, List[bytes]]:
